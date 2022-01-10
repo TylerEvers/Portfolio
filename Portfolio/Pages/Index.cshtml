@@ -1,0 +1,59 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="about">
+    <div class="row">
+        <div class="col-sm-3">
+            <p>Photo Goes Here</p>
+        </div>
+        <div class="col-sm-9">
+            <p><b>Tyler Evers</b> <i>(EEV-errs)</i></p>
+            <p> I'm a Software Engineer specializing in building testable code in the .NET Core Stack, RESTful APIs, and SQL. I am currently working on expanding my knowledge in this tech stack along with learning Python and Azure Cloud Services.</p>
+            <p><b>Links: </b> <a href="https://github.com/TylerEvers">GitHub</a>, <a href="https://www.linkedin.com/in/tyler-evers-903342166/">LinkedIn</a></p>
+            <p> Outside of software development I enjoy, hiking, playing video games, watching movies, and American football. </p>
+        </div>
+    </div>
+</div>
+
+<div class="projects">
+    <div class="row">
+        <div class="col-sm-12">
+            <h3>My Projects</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="project">
+            <div class="col-sm-12">
+                <p class="projectname"><b><a href="https://github.com/TylerEvers/AOC2021">Advent Of Code - 2021</a></b> (C#)</p>
+                <p>C# Repo containing my current progress on the Advent of Code 2021 challenges.</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="project">
+            <div class="col-sm-12">
+                <p class="projectname"><b><a href="https://github.com/TylerEvers/FFUpdates-API">FFUpdates-API</a></b> (ASP.Net)</p>
+                <p>FFupdates-API is a sample RESTful API developed around a SQL database containing Teams and NFL Players tied to my personal dynasty fantasy football league.</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="project">
+            <div class="col-sm-12">
+                <p class="projectname"><b><a href="https://github.com/TylerEvers/FFUpdates-DynamoLeagueScrape">FFUpdates-DynamoLeagueScrape</a></b> (C#)</p>
+                <p>A small C# batch app to scrape rosters data from my personal fantasy football league's website and feed it into my personal database. This repo also implements <b>XUnit for Unit Testing</b></p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="project">
+            <div class="col-sm-12">
+                <p class="projectname"><b><a href="https://github.com/TylerEvers/FFUpdate-RosterFeed">FFUpdates-RosterFeed</a></b> (Python)</p>
+                <p>This repo is my first official Python project. Its a simple batch app that tanks a .CSV file and feeds it into a personal SQL Server.</p>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,186 @@
+﻿@page
+@model PrivacyModel
+@{
+    ViewData["Title"] = "Resume";
+}
+
+<div class="resume">
+    <div class="row">
+        <div class="col-sm-4">
+            <p class="content">103 12th St SE</p>
+            <p class="content">Altoona, IA 50009</p>
+        </div>
+        <div class="col-sm-4">
+            <h3>Tyler R. Evers</h3>
+        </div>
+        <div class="col-sm-4">
+            <p class="content"><a href="mailto:mail@tylerevers.com">mail@tylerevers.com</a></p>
+            <p class="content">641-895-4866</p>
+        </div>
+    </div>
+</div>
+
+<div class="experience">
+    <div class="row">
+        <div class="col-sm-12">
+            <h5>Work Experience:</h5>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-3">
+            May 2017 - Present
+        </div>
+        <div class="col-sm-6">
+            Casey’s General Stores - Software Engineer
+        </div>
+        <div class="col-sm-3">
+            Ankeny, IA
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <ul>
+                <li>Lead Engineer on the successful integration with Gravitate into our Dispatch and Verizon Connect systems via Rest API feeds</li>
+                <li>Lead Engineer on the successful integration with Verizon Connect to support our drivers and dispatch system 24/7</li>
+                <li>Maintenance and feature work on external facing dispatch system handling 1000+ orders/day</li>
+                <li>Mentored and trained a new hire along with two summer interns that were both hired on full time</li>
+                <li>Developed & maintained processes in .NET languages, including batch applications, UI’s, and shared libraries</li>
+                <li>Integrated and maintained a variety of data feeds including CSV, JSON, and XML formats</li>
+                <li>Developed and maintained a variety of SFTP/FTP and Azure API feeds with 3rd Party Companies</li>
+                <li>Tracked workflow via ServiceNow & JIRA and maintained source code via Azure Devops</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="projects">
+    <div class="row">
+        <div class="col-sm-12">
+            <h5>Projects: </h5>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            Personal Github: <a href="https://github.com/TylerEvers">https://github.com/TylerEvers</a>
+        </div>
+    </div>
+    <div class="project">
+        <div class="row">
+            <div class="col-sm-12">
+                <h6>ASP.Net - FFUpdate-API</h6>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <ul>
+                    <li>ASP.Net API to get/post Player and Team data for NFL players and Teams in personal dynasty league</li>
+                    <li><a href="https://github.com/TylerEvers/FFUpdates-API">https://github.com/TylerEvers/FFUpdates-API</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="project">
+        <div class="row">
+            <div class="col-sm-12">
+                <h6>C# - FFUpdate-DynamoLeagueScrape</h6>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <ul>
+                    <li>C# batch app to scrape current roster data from personal dynasty fantasy football site</li>
+                    <li><a href="https://github.com/TylerEvers/FFUpdates-DynamoLeagueScrape">https://github.com/TylerEvers/FFUpdates-DynamoLeagueScrape</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="project">
+        <div class="row">
+            <div class="col-sm-12">
+                <h6>Python - FFUpdate-RosterFeed</h6>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <ul>
+                    <li>Python batch application to take a CSV file from personal dynasty fantasy football site</li>
+                    <li><a href="https://github.com/TylerEvers/FFUpdate-RosterFeed">https://github.com/TylerEvers/FFUpdate-RosterFeed</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="project">
+        <div class="row">
+            <div class="col-sm-12">
+                <h6>C# - Advent of Code - 2021</h6>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <ul>
+                    <li>C# Project containing all my solved Advent of Code 2021 challenges</li>
+                    <li><a href="https://github.com/TylerEvers/AOC2021">https://github.com/TylerEvers/AOC2021</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="education">
+    <div class="row">
+        <div class="col-sm-12">
+            <h5>Education:</h5>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <p class="content">Indian Hills Community College, Ottumwa, Iowa</p>
+            <p class="content">Associate of Applied Science in Computer Software Development</p>
+            <p class="info">Awarded Rosenman Foundation Scholarship</p>
+            <p class="info">Emphasis in Web Development</p>
+            <p class="info">Graduated May 2017</p>
+        </div>
+    </div>
+</div>
+
+<div class="references">
+    <div class="row">
+        <div class="col-sm-12">
+            <h5>References:</h5>
+        </div>
+    </div>
+    <div class="reference">
+        <div class="row">
+            <div class="col-sm-12">
+                <p class="name"><b>Chris Tuvera</b></p>
+                <p class="info">Former Manager (2017 - 2019)</p>
+                <p class="info">Casey’s</p>
+                <p class="info"><a href="mailto:Chris.Tuvera@caseys.com">Chris.Tuvera@caseys.com</a></p>
+                <p class="info">Office: 515.965.6220</p>
+            </div>
+        </div>
+    </div>
+    <div class="reference">
+        <div class="row">
+            <div class="col-sm-12">
+                <p class="name"><b>Clint Morse</b></p>
+                <p class="info">Former Manager (2019 - 2021)</p>
+                <p class="info">Casey’s</p>
+                <p class="info"><a href="mailto:clint.morse13@gmail.com">clint.morse13@gmail.com</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="reference">
+        <div class="row">
+            <div class="col-sm-12">
+                <p class="name"><b>Susan Wilson</b></p>
+                <p class="info">College Professor</p>
+                <p class="info">Indian Hills Community College</p>
+                <p class="info">ATC, 626 Indian Hills Drive, Building 14</p>
+                <p class="info">Ottumwa, IA 52501</p>
+                <p class="info">Office: 641.683.5111 Ext. 1760</p>
+                <p class="info"><a href="mailto:Susan.Wilson@indianhills.edu">Susan.Wilson@indianhills.edu</a></p>
+            </div>
+        </div>
+    </div>
+</div>
