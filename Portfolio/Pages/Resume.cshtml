@@ -1,18 +1,26 @@
 ﻿@page
 @model PrivacyModel
 
+<div class="download">
+    <div class="row">
+        <div class="col-sm-12">
+            <button type="submit" onclick="window.open('/Resume.docx')" class="btn btn-primary" download>Download</button>
+        </div>
+    </div>
+</div>
+
 <div class="resume">
     <div class="row">
         <div class="col-sm-4">
-            <p class="content">103 12th St SE</p>
-            <p class="content">Altoona, IA 50009</p>
+            <p class="header-address">103 12th St SE</p>
+            <p class="header-address">Altoona, IA 50009</p>
+        </div>
+        <div class="col-sm-3">
+            <h3>Tyler Evers</h3>
         </div>
         <div class="col-sm-4">
-            <h3>Tyler R. Evers</h3>
-        </div>
-        <div class="col-sm-4">
-            <p class="content"><a href="mailto:mail@tylerevers.com">mail@tylerevers.com</a></p>
-            <p class="content">641-895-4866</p>
+            <p class="header-contact"><a href="mailto:mail@tylerevers.com">mail@tylerevers.com</a></p>
+            <p class="header-contact">641-895-4866</p>
         </div>
     </div>
 </div>

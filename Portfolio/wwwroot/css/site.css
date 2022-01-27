@@ -1,13 +1,16 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
+/* navbar */
+.navbar {
+    background-color: #eeeeee;
+}
+
 a.navbar-brand {
   white-space: normal;
   text-align: center;
   word-break: break-all;
 }
-
-a.nav
 
 /* Provide sufficient contrast against white background */
 a {
@@ -21,9 +24,13 @@ a {
 }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+    color: #ffffff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.nav-link.active, .nav-link:hover {
+    background-color: #ddd;
 }
 
 /* Sticky footer styles
@@ -72,6 +79,8 @@ body {
   line-height: 60px; /* Vertically center the text there */
 }
 
+
+/* Index */
 p.projectname {
     margin-top: 0;
     margin-bottom: 0;
@@ -92,13 +101,28 @@ p.name {
     margin-bottom: 0;
 }
 
-p.info {
-    padding-left: 3rem;
+/* Resume */
+p.content, p.header-address {
+    padding-left: 0rem;
     margin-bottom: 0;
 }
 
-p.content {
+p.header-contact {
     padding-left: 0rem;
+    margin-bottom: 0;
+    text-align: right;
+}
+
+@media (max-width: 575px) {
+    p.header-contact {
+        padding-left: 0rem;
+        margin-bottom: 0;
+        text-align: left;
+    }
+}
+
+p.info {
+    padding-left: 3rem;
     margin-bottom: 0;
 }
 
@@ -108,4 +132,9 @@ p.content {
 
 .references {
     margin-top: 1.5rem;
+}
+
+.download {
+    margin-bottom: 1rem;
+    float: right;
 }
