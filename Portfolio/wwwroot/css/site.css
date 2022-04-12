@@ -81,9 +81,14 @@ body {
 
 
 /* Index */
+.info .name {
+    font-size: 20px;
+}
+
 p.projectname {
     margin-top: 0;
     margin-bottom: 0;
+    font-size: 18px;
 }
 
 .about {
@@ -152,4 +157,8 @@ p.info {
 .download {
     margin-bottom: 1rem;
     float: right;
+}
+
+.job .job-header {
+    margin-bottom: 5px;
 }
