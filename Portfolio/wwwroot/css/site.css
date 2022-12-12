@@ -1,0 +1,251 @@
+﻿html {
+    font-size: 1rem;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+@media (min-width: 1000px) {
+  html {
+    font-size: 1.1rem;
+  }
+}
+
+a {
+    color: #FFC300;
+    text-decoration: none;
+}
+
+p, li {
+    color: #c3c3c3;
+}
+
+h2 {
+    color: #eeeeee;
+    margin: auto;
+}
+
+h3 {
+    margin: auto;
+}
+
+h4 {
+    margin: auto;
+}
+
+.btn {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.nav-link, .navbar-brand {
+    color: #eeeeee;
+}
+
+    .nav-link.active, .nav-link:hover, .navbar-brand:active, .navbar-brand:hover {
+        color: #EEEEEE;
+    }
+
+.border-top {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+    background-color: #191923;
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    background-color: #191923;
+    color: #eeeeee;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px; /* Vertically center the text there */
+}
+
+
+/* Index */
+.info .name {
+    font-size: 20px;
+    color: #EEEEEE;
+}
+
+.project {
+    margin-top: .5rem;
+}
+
+    .project p {
+        margin-top: .5rem;
+    }
+
+p.projectname {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 18px;
+}
+
+.about {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    min-height: 220px;
+}
+
+.projects {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+p.name {
+    padding-left: 1.5rem;
+    margin: auto;
+}
+
+.headshot {
+    float: left;
+    width: 175px;
+}
+
+img {
+    width: 160px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: block;
+}
+
+/* Resume */
+p.content, p.header-address {
+    padding-left: 0rem;
+    margin: auto;
+}
+
+p.header-contact {
+    padding-left: 0rem;
+    margin: auto;
+    text-align: right;
+}
+
+@media (max-width: 575px) {
+    p.header-contact {
+        padding-left: 0rem;
+        margin: auto;
+        text-align: left;
+    }
+}
+
+p.info {
+    padding-left: 3rem;
+    margin: .5rem;
+}
+
+.experience {
+    margin-top: 1.5rem;
+}
+
+.references {
+    margin-top: 1.5rem;
+}
+
+.download {
+    margin-bottom: 1rem;
+    float: right;
+    margin-left: 1rem;
+}
+
+.job .job-header {
+    margin-bottom: 5px;
+}
+
+.resume {
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+
+    .resume .resume-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+        .resume .resume-header resume-header-child {
+            flex-basis: auto;
+        }
+
+    .resume ul {
+        margin-top: .7rem;
+    }
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #26262F;
+}
+
+.navigation ul li {
+    float: left;
+}
+
+    .navigation ul li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 16px;
+        text-decoration: none;
+    }
+
+        .navigation ul li a:hover {
+            background-color: #33333A;
+            color: #FFC300;
+        }
+
+        .navigation ul li a:active {
+            color: #FFC300;
+        }
+
+.job .job-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+    .job .job-header .job-header-child {
+        flex-basis: auto;
+    }
