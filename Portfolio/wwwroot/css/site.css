@@ -1,5 +1,8 @@
 ﻿html {
     font-size: 1rem;
+    position: relative;
+    min-height: 100%;
+    background-color: #191923;
 }
 
 body {
@@ -7,12 +10,29 @@ body {
     margin-left: auto;
     margin-right: auto;
     width: 80%;
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    background-color: #191923;
+    color: #eeeeee;
 }
 
 @media (min-width: 1000px) {
-  html {
-    font-size: 1.1rem;
-  }
+    html {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin-left: auto;
+        margin-right: auto;
+        width: 95%;
+    }
+
+    html {
+        font-size: .9rem;
+    }
 }
 
 a {
@@ -37,65 +57,35 @@ h4 {
     margin: auto;
 }
 
-.btn {
-    color: #fff;
-    background-color: #1b6ec2;
-    border-color: #1861ac;
+/*Navigation*/
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #26262F;
 }
 
-.btn:hover {
-    cursor: pointer;
-}
-
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-    background-color: #1b6ec2;
-    border-color: #1861ac;
-}
-
-.nav-link, .navbar-brand {
-    color: #eeeeee;
-}
-
-    .nav-link.active, .nav-link:hover, .navbar-brand:active, .navbar-brand:hover {
-        color: #EEEEEE;
+    .navigation ul li {
+        float: left;
     }
 
-.border-top {
-  border-top: 1px solid #e5e5e5;
-}
-.border-bottom {
-  border-bottom: 1px solid #e5e5e5;
-}
+        .navigation ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+        }
 
-.box-shadow {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
-}
+            .navigation ul li a:hover {
+                background-color: #33333A;
+                color: #FFC300;
+            }
 
-button.accept-policy {
-  font-size: 1rem;
-  line-height: inherit;
-}
-
-html {
-    position: relative;
-    min-height: 100%;
-    background-color: #191923;
-}
-
-body {
-    /* Margin bottom by footer height */
-    margin-bottom: 60px;
-    background-color: #191923;
-    color: #eeeeee;
-}
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  line-height: 60px; /* Vertically center the text there */
-}
-
+            .navigation ul li a:active {
+                color: #FFC300;
+            }
 
 /* Index */
 .info .name {
@@ -186,6 +176,16 @@ p.info {
     margin-left: 1rem;
 }
 
+.btn {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+    .btn:hover {
+        cursor: pointer;
+    }
+
 .job .job-header {
     margin-bottom: 5px;
 }
@@ -211,35 +211,6 @@ p.info {
         margin-top: .7rem;
     }
 
-.navigation ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #26262F;
-}
-
-.navigation ul li {
-    float: left;
-}
-
-    .navigation ul li a {
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 16px;
-        text-decoration: none;
-    }
-
-        .navigation ul li a:hover {
-            background-color: #33333A;
-            color: #FFC300;
-        }
-
-        .navigation ul li a:active {
-            color: #FFC300;
-        }
-
 .job .job-header {
     display: flex;
     flex-direction: row;
@@ -249,3 +220,13 @@ p.info {
     .job .job-header .job-header-child {
         flex-basis: auto;
     }
+
+@media (max-width: 1000px) {
+    .resume .resume-header .resume-header-child {
+        font-size: .9rem;
+    }
+
+    .download {
+        display: none;
+    }
+}
