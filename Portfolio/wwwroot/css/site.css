@@ -1,4 +1,6 @@
-﻿html {
+﻿@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css");
+
+html {
     font-size: 1rem;
     position: relative;
     min-height: 100%;
@@ -62,6 +64,7 @@ h4 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    background-color: #26262F;
 }
 
 /*Navigation*/
@@ -76,11 +79,9 @@ h4 {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #26262F;
 }
 
     .navigation ul li {
-        float: left;
         position: relative;
     }
 
@@ -123,20 +124,21 @@ h4 {
 .links {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .links ul {
     display: flex;
     flex-direction: row;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     overflow: hidden;
-    background-color: #26262F;
+    margin: auto;
 }
 
     .links ul li {
-
+        display: flex;
+        width: 50px;
+        justify-content: space-between;
     }
 
         .links ul li::after {
@@ -147,13 +149,16 @@ h4 {
             text-decoration: none;
         }
 
-        .links ul li a:hover {
-            background-color: #33333A;
-            color: #FFC300;
+        .links ul li a {
+            display: flex;
+            color: white;
+            text-align: center;
+            font-size: 28px;
+            text-decoration: none;
         }
 
-        .links ul li a:active {
-            color: #FFC300;
+        .links ul li a:hover {
+                color: #FFC300;
         }
 
 /* Index */
