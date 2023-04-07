@@ -79,6 +79,29 @@ h4 {
     background-color: #26262F;
 }
 
+    .navigation ul li {
+        float: left;
+        position: relative;
+    }
+
+        .navigation ul li::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 2px;
+            bottom: 0px;
+            left: 0;
+            background-color: #FFC300;
+            transform-origin: bottom center;
+            transition: transform 0.25s ease-out;
+        }
+
+        .navigation ul li:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom center;
+        }
+
         .navigation ul li a {
             display: block;
             color: white;
