@@ -57,18 +57,27 @@ h4 {
     margin: auto;
 }
 
+
+.masthead {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 /*Navigation*/
+.navigation {
+
+}
+
 .navigation ul {
+    display: flex;
+    flex-direction: row;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #26262F;
 }
-
-    .navigation ul li {
-        float: left;
-    }
 
         .navigation ul li a {
             display: block;
@@ -78,14 +87,51 @@ h4 {
             text-decoration: none;
         }
 
-            .navigation ul li a:hover {
-                background-color: #33333A;
-                color: #FFC300;
-            }
+        .navigation ul li a:hover {
+            background-color: #33333A;
+            color: #FFC300;
+        }
+        
+        .navigation ul li a:active {
+            color: #FFC300;
+        }
 
-            .navigation ul li a:active {
-                color: #FFC300;
-            }
+/*Links*/
+.links {
+    display: flex;
+    flex-direction: row;
+}
+
+.links ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #26262F;
+}
+
+    .links ul li {
+
+    }
+
+        .links ul li::after {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+        }
+
+        .links ul li a:hover {
+            background-color: #33333A;
+            color: #FFC300;
+        }
+
+        .links ul li a:active {
+            color: #FFC300;
+        }
 
 /* Index */
 .info .name {
