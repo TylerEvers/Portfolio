@@ -201,6 +201,7 @@ p.name {
 .headshot {
     float: left;
     width: 175px;
+    margin-right: 15px;
 }
 
 img {
