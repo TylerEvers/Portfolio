@@ -37,11 +37,6 @@ body {
     }
 }
 
-a {
-    color: #FFC300;
-    text-decoration: none;
-}
-
 p, li {
     color: #c3c3c3;
 }
@@ -176,6 +171,11 @@ h4 {
         margin-top: .5rem;
     }
 
+    .project a {
+        color: #FFC300;
+        text-decoration: none;
+    }
+
 p.projectname {
     margin-top: 0;
     margin-bottom: 0;
@@ -234,11 +234,18 @@ img {
         justify-content: inherit;
     }
 
-    .skill-container .skill i {
-        font-size: 4rem;
-    }
+        .skill-container .skill a {
+            color: white;
+        }
 
-                
+        .skill-container .skill i {
+            font-size: 4rem;
+        }
+
+        .skill-container .skill i:hover {
+            color: #FFC300;
+            cursor: pointer;
+        }       
 
 /* Resume */
 p.content, p.header-address {
