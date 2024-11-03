@@ -81,6 +81,11 @@
 
     private void FilterProjects(string skill)
     {
+        if (selectedSkill == skill)
+        {
+            selectedSkill = string.Empty;
+            return;
+        }
         selectedSkill = skill;
     }
 }
