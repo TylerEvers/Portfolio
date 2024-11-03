@@ -234,10 +234,6 @@ img {
         justify-content: inherit;
     }
 
-        .skill-container .skill a {
-            color: white;
-        }
-
         .skill-container .skill i {
             font-size: 4rem;
         }
