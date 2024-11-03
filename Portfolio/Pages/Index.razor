@@ -47,9 +47,9 @@
         </div>
         @foreach (var project in projects)
         {
-            if (string.IsNullOrEmpty(selectedSkill) || project.dataCategory.Contains(selectedSkill))
+            if (string.IsNullOrEmpty(selectedSkill) || (project.skills != null && project.skills.Contains(selectedSkill)))
             {
-                <div class="project" data-category="@project.dataCategory">
+                <div class="project" data-category="@project.skills">
                     <p class="projectname"><b><a href="@project.link">@project.name</a></b> (@project.language)</p>
                     <p>@project.description</p>
                 </div>
@@ -63,20 +63,20 @@
 
     private List<Project> projects = new List<Project>
     {
-        new Project { name = "Advent Of Code - 2021", link = "https://github.com/TylerEvers/AOC2021", language = "C#", description = "Repo containing my current progress on the Advent of Code 2021 challenges.", dataCategory = "dotnet" },
-        new Project { name = "FFUpdates-API", link = "https://github.com/TylerEvers/FFUpdates-API", language = "ASP.Net", description = "Sample RESTful API developed in ASP.Net and implementing Dapper ORM.", dataCategory = "dotnet sql" },
-        new Project { name = "Portfolio", link = "https://github.com/TylerEvers/Portfolio", language = "ASP.Net", description = "The source code for the site you are currently looking at.", dataCategory = "dotnet html css azure" },
-        new Project { name = "FFUpdates-DynamoLeagueScrape", link = "https://github.com/TylerEvers/FFUpdates-DynamoLeagueScrape", language = "C#", description = "A small C# batch app to scrape rosters data.", dataCategory = "dotnet sql" },
-        new Project { name = "FFUpdates-RosterFeed", link = "https://github.com/TylerEvers/FFUpdate-RosterFeed", language = "Python", description = "A simple batch app that takes a .CSV file.", dataCategory = "python sql" }
+        new Project { name = "Advent Of Code - 2021", link = "https://github.com/TylerEvers/AOC2021", language = "C#", description = "Repo containing my current progress on the Advent of Code 2021 challenges.", skills = new string[] {"dotnet"} },
+        new Project { name = "FFUpdates-API", link = "https://github.com/TylerEvers/FFUpdates-API", language = "ASP.Net", description = "Sample RESTful API developed in ASP.Net and implementing Dapper ORM.", skills = new string[] {"dotnet","sql" } },
+        new Project { name = "Portfolio", link = "https://github.com/TylerEvers/Portfolio", language = "ASP.Net", description = "The source code for the site you are currently looking at.", skills = new string[] {"dotnet","html","css","azure" } },
+        new Project { name = "FFUpdates-DynamoLeagueScrape", link = "https://github.com/TylerEvers/FFUpdates-DynamoLeagueScrape", language = "C#", description = "A small C# batch app to scrape rosters data.", skills = new string[] {"dotnet","sql" } },
+        new Project { name = "FFUpdates-RosterFeed", link = "https://github.com/TylerEvers/FFUpdate-RosterFeed", language = "Python", description = "A simple batch app that takes a .CSV file.", skills = new string[] {"python","sql"} }
     };
 
     private class Project
     {
-        public string name { get; set; }
-        public string link { get; set; }
-        public string language { get; set; }
-        public string description { get; set; }
-        public string dataCategory { get; set; }
+        public string? name { get; set; }
+        public string? link { get; set; }
+        public string? language { get; set; }
+        public string? description { get; set; }
+        public string[]? skills { get; set; }
     }
 
     private void FilterProjects(string skill)
