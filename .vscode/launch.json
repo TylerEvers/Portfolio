@@ -1,0 +1,14 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch Portfolio (Blazor WebAssembly)",
+            "type": "blazorwasm",
+            "request": "launch",
+            "preLaunchTask": "build Portfolio",
+            "cwd": "${workspaceFolder}/Portfolio",
+            "url": "https://localhost:7144",
+            "browser": "chrome"
+        }
+    ]
+}
