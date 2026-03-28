@@ -236,11 +236,13 @@ p.name {
 
         .skill-container .skill i {
             font-size: 4rem;
+            transition: color 0.3s ease, transform 0.3s ease;
         }
 
         .skill-container .skill i:hover {
             color: #FFC300;
             cursor: pointer;
+            transform: scale(1.25);
         }       
 
 /* Resume */
